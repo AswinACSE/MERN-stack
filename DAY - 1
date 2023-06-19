@@ -69,3 +69,44 @@ SQL - Structured query language
 > Transaction - commit , roleback , savepoint
 
 > Data query language - select
+------------------
+Program using SQL
+------------------
+create table students(ID INT, Name varchar(20) , age INT , major varchar(10));
+
+insert into students (ID , Name , age , major) values 
+(1, 'Bala' , 19 , 'unity'),
+(2, 'Surya' , 20 , 'Engligh'),
+(3, 'Ashwin' , 19 , 'Biology'),
+(4, 'Brijesh' , 21 , 'Physics'),
+(5, 'Deepak' , 20 , 'Engligh'),
+(6, 'Florance' , 18 , 'Chemistry'),
+(7, 'vimal' , 21 , 'Computer science'),
+(8, 'chandra' , 19 , 'Maths'),
+(9, 'Prakash' , 20 , 'Tamil'),
+(10, 'Anirudh' , 22 , 'Physics');
+
+alter table students add column email varchar(50);
+
+update students set email = 'flora@gamil.com' where ID = 6;
+
+delete from students where id = 6;
+
+select * from students where id between 2 and 9;
+
+select * from students where name in ('Deepak' , 'Anirudh');
+
+OUTPUT :
+--------
+2|Surya|20|Engligh|
+3|Ashwin|19|Biology|
+4|Brijesh|21|Physics|
+5|Deepak|20|Engligh|
+7|vimal|21|Computer science|
+8|chandra|19|Maths|
+9|Prakash|20|Tamil|
+
+5|Deepak|20|Engligh|
+10|Anirudh|22|Physics|
+
+[Execution complete with exit code 0]
