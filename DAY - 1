@@ -1,0 +1,59 @@
+          MERN Stack 
+
+Database Management System
+--------------------------
+> Used to store and manage large files
+
+> Componenets - hardware , software
+
+> Architecture - single-tier , two-tier , three-tier
+
+Server
+------
+> It recieves the clients request and respond to them.
+
+Types of Database
+-----------------
+> Distributed database - one table can be accessed by anyone.
+> Centeralization database - N number of tables can accessed by anyone.
+> Relational database - structured way of storing data.
+> Graph database - tree structured database (network database , hierarchy database)
+> NoSQL database - unstructured way of storing data.
+> Cloud database - high storage
+
+Components of database management system
+----------------------------------------
+> Configuting authentication and authorization
+> Providing data backup and snapshot
+> Storage engine
+> Query language
+> language engine
+> Meta data
+> Log manupulation
+
+Model data
+----------
+> ER model - pictorial representation,
+             structural database,
+             real world object-entity,
+             through SQL.
+
+> Object based data model - unstructured format,
+                            oops concept (ploymorpishm , encapsulation ,...),
+                            create a class instance automatically. 
+
+> Semi-structured model - MongoDB
+
+ER - Entity Relation model types
+
+> Entity - weak entity
+
+> Attribute - key attribute,
+              compute attribute,
+              multivalued attribute,
+              derived attribute.
+
+> Relation - one to one,
+             one to many,
+             many to many,
+             many to one.
