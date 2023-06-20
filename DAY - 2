@@ -40,3 +40,45 @@ MONGODB Comments:
   upsertedCount: 0
  }
 
+
+> db.mycollection.find();
+< {
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+ }
+
+
+> db.mycollection.insertOne([{ name:"John" , age: 30} ,{ name:"Deepak" , age: 20} ,{ name:"Bala" , age:20} ]);
+< {
+  acknowledged: true,
+  insertedId: ObjectId("6491711c2c831933e31fb987")
+ }
+
+> db.mycollection.find();
+< {
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+}
+
+{
+  _id: ObjectId("64916ee02c831933e31fb986"),
+  name: 'John',
+  age: 35
+}
+{
+  '0': {
+    name: 'John',
+    age: 30
+  },
+  '1': {
+    name: 'Deepak',
+    age: 20
+  },
+  '2': {
+    name: 'Bala',
+    age: 20
+  },
+  _id: ObjectId("6491711c2c831933e31fb987")
+}
