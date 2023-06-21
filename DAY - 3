@@ -1,1 +1,70 @@
+JAVA SCRIPT
+-----------
 
+console.log(); -> it is used to print the output
+
+Data types - let -> It takes first assigned value.
+             const -> It cannot assingned more value , 
+                      if one value is assigned it is used in entire program.
+             var -> It takes last assigned value
+
+Scopes - local scope 
+         global scope
+         block scope
+
+-------------
+let a="sece";
+
+const name='nandha';
+
+let age=20;
+
+var x=100;        
+{
+    var x=20;
+    console.log(x);
+}
+console.log(a,name, age);
+
+data type -> number-interger,infinity,-infinty,NaN
+
+let c=1/0;
+
+let z="dmkn"/0;
+
+console.log(c);
+
+console.log(z);
+
+let fz="1"*0;
+console.log(fz);
+
+bigint
+------
+let b=10n;
+console.log(b, typeof b);
+
+string
+------
+
+let str='addition of two number ';
+let str1=" and ";
+let str3=" = ";
+let num1=10;
+let num2=20;
+let num3=num1+num2;
+let s=str+num1+str1+num2+str3+num3;
+console.log(additon of two numbers);
+
+
+To avoid above things we use :
+------------------------------
+let num1 = 10;
+let num2 = 20;
+console.log(`addition of two number ${num1} and ${num2} = ${num1 + num2}`); -> it is pactic type
+
+let xtr = null;
+console.log(xtr);
+
+const sece= "college";
+console.log(sece);
