@@ -68,3 +68,47 @@ console.log(xtr);
 
 const sece= "college";
 console.log(sece);
+
+
+const user1 ={
+    name:'ram',
+    age:27,
+    phone:989656946,
+    college:'sece',
+    email:'ram@gmail.com'
+    };
+    user1.school='srm';
+    delete user1.age;
+console.log(user1);
+
+const userx={
+    name:'xyz',
+    age:89
+}
+const usery={...userx,age:30};//... ->spread operator.
+console.log(userx, usery)
+
+
+const details = {
+    address:{
+        street : '1st',
+        city : 'coimbatore'
+    }
+}
+console.log(details.address.city);
+
+function sum(num1,num2){
+    return num1+num2;
+}
+console.log(sum(20,30));
+
+
+let str = "   i am a student at sece   ";
+console.log(str.trim());
+// output: i am a student at sece
+
+let str="    Hello from SECE    ";
+let str2=str.trim();
+console.log(str.replace('E','O'));//Non-destructive-does not change the original string
+console.log(str.replaceAll('E','O'));//Non-destructive-does not change the original string
+console.log(str2);
