@@ -1,1 +1,56 @@
+let s='malayalam';
+let pal=s.split('');
+pal.reverse();
 
+console.log(pal.join(""));
+
+let arr = [1,2,3,4,5];
+
+for(let key of arr){
+    console.log(key);
+}
+
+let obj1 = {
+    a:'deppak',
+    b:20,
+    C:'cse'
+}
+
+for(let key in obj1){
+    console.log(obj1);
+}
+
+let sece = ["Senthil" , "Guna" , "Velu " , "Rajan" , "Anbu"];
+let arr1 = [ 1 ,2 ,3 ,4 , 5];
+
+sece.forEach((ele) => {
+    console.log(ele);
+})
+
+let arr2 = sece.map(ele => ele.repeat(2));
+console.log(arr2);
+
+let name_obj = [
+    {
+        name : "Aswin",
+        dob : 2002
+    },
+    {
+        name : "Deepak",
+        dob : 2003
+    },
+    {
+        name : "Bala",
+        dob : 2003
+    },
+    {
+        name : "Suriya",
+        dob : 2004
+    }
+    ]
+
+let ans = name_obj.filter((ele)=>{
+    return ele.dob>2002;
+})
+    
+console.log(ans);
