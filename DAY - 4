@@ -99,6 +99,28 @@ const obj3 = [
 let salans = obj3.filter(ele => ele.sal>=25000).map(ele => {
     return {name : ele.name , age:ele.age};
 })
+
+const abc = new promise ((resolve , reject )=>{
+    resolve ('hello');
+ });
+
+ abc 
+ .TouchEvent((value)=> {console.log(value)})
+ .catch ((error)=>{console.log('error',error)})
+ console.log(abc);
+
+console.log(JSON.stringify(user1));
+
+ const promisex = new promise((resolve)=>{
+    setTimeout(()=>{
+        resolve('resolved')
+    },4000)
+ })
+
+
+ promisex
+ .then((value)=> console.log(value))
+ .catch(()=> console.log('error'));
 console.log(salans)
 
 let arr_nums = [10 , 20 , 30 , 40 , 50 , 60 , 70];
