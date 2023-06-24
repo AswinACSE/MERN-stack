@@ -42,3 +42,49 @@ setInterval(()=>{
     allchild[0].style.color=(referesh_values ? "green" :"orange");
     referesh_values =!referesh_values;
 },2000)
+
+export const USER_DATA = [
+    { id:1,
+     name:'ram',
+     age:20,
+     email:'abc@gmail.com'
+    }
+ ]
+ 
+ export const addUser = (new_user) =>{//to add a new user
+     USER_DATA.push(new_user)
+ }
+ 
+ export const editUser = (id,key,value) =>{//to edit the one value
+ 
+     USER_DATA.forEach((user) =>{
+         if(user.id == id)
+         {
+                 user[key] = value
+         }
+     })
+ 
+ }
+ 
+ export const deleteUser = (id) => {//to delete the user
+ 
+     for(index in USER_DATA){
+         if(USER_DATA[index].id == id)
+         {
+             USER_DATA.splice(index,1)
+         }
+     }
+ 
+ }
+ addUser({id:2,age:20,name:'chandra',emai:'a@gmail.com'})//to add a multiple values in object from array.
+ editUser(1,'age',34)
+ deleteUser(2)
+ console.log(USER_DATA)
+ //edit 
+ const emp=(id=1,updateValue={
+    name:'hari',
+    age:60
+ })=>
+ {
+
+
