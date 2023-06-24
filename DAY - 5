@@ -86,5 +86,13 @@ export const USER_DATA = [
     age:60
  })=>
  {
-
+ const editUser1 = USER_DATA.findIndex((user)=>user.id===id);
+ if(USER_DATA!=-1){
+  USER_DATA[user_index]={
+    ...USER_DATA[user_index],
+    ...updateValues
+  }
+  USER_DATA[user_index]
+ }
+ }
 
