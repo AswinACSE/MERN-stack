@@ -1,1 +1,44 @@
+import {USER_DATA,addUser,editUser,deleteUser}from'./usermodule.js';
+console.log(USER_DATA);
+adduser({
+    id:7,
+    name:'bala',
+    age:45
+});
+console.log(USER_DATA)*/
 
+
+
+//DOM ->document object model
+//document.body.innerText='hai';     only type in text
+
+//document.body.innerHTML='<div>hello</div>'; // in this we can give values in tags it will print only values
+//document.body.style.backgroundColor="red";//used to change the background colour
+
+//console.log(document.body.children);
+//const allchild=document.body.children;
+
+setTimeout(()=>a[0].style.color="red",3000);
+setTimeout(()=>a[1].style.color='yellow',6000);
+setTimeout(()=>a[2].style.color='green',9000);*/
+
+
+/*setTimeout(()=> {
+    allchild[0].style.color="red";
+    allchild[0].innerText='red'
+},2000)
+
+setTimeout(()=> {
+    allchild[1].style.color="yellow";
+    allchild[1].innerText='yellow'
+},4000)
+
+setTimeout(()=> {
+    allchild[2].style.color="green";
+    allchild[2].innerText='green'
+},6000)
+
+setInterval(()=>{
+    allchild[0].style.color=(referesh_values ? "green" :"orange");
+    referesh_values =!referesh_values;
+},2000)
