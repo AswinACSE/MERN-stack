@@ -1,3 +1,6 @@
+NODE JS
+
+reading a 
 const fs = require('fs');
 
 fs.readFile(${__dirname}/states.txt, (err,data) => {
@@ -10,3 +13,15 @@ fs.readFile(${__dirname}/states.txt, (err,data) => {
 
 const name ='ASWIN';
 console.log(__dirname="state.txt");
+
+
+const fs = require('fs');
+const inputData = 'pala pala pala bahubali';
+
+fs.writeFile(${__dirname}/file1.txt, inputData, (err) => {
+    if(err){
+        console.log("ERROR da Baiya 😔");
+    }else{
+        console.log("file created da side la paaru");
+    }
+})
