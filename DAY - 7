@@ -1,1 +1,31 @@
+const data = require('./personal info.json')
+let keys = Object.keys(data)
+console.log(keys);
 
+for(key of keys){
+    if(typeof data[key] == 'object')
+    {
+        let kk = Object.keys(data[key]) 
+        for(k of kk)
+        {
+            console.log(data[key][k]);
+        }
+    }
+    else
+    console.log(data[key]);
+}
+
+const getdata = (d) =>
+{
+    let keys = Object.keys(d)
+    for(key of keys){
+        if(typeof d[key] == 'object')
+        {
+            getdata(d[key])
+        }
+        else
+        console.log(d[key]);
+    }
+}
+
+getdata(data)
