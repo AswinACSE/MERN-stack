@@ -1,3 +1,26 @@
+Create json text file :
+{
+    "name":"Aswin",
+    "age":19,
+    "class":"CSE - A",
+    "phone num":56485458648
+    "address":{
+        "state":"tamil nadu",
+        "district":"tirupur",
+        "town":"udumalpet"
+    }
+}
+Access json file : 
+const info = require('./personal info.json');
+
+const key = Object.keys(info);
+
+for (let i=0;i<key.length;i++){
+    const key2 = key[i];
+    console.log(info[key2]);
+    }
+------------------------
+
 const data = require('./personal info.json')
 let keys = Object.keys(data)
 console.log(keys);
